@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.container{
+    max-width: 100%;
+    min-width: 320px;
+}
+
+.header{
+    background: #181510 url(../img/hbg.jpg) top center no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 0 0 250px 0;
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 130px 0;
+}
+
+.header__menu ul{
+    display: flex;
+    list-style: none;
+}
+
+.header__menu ul li{
+    margin: 0 20px;
+}
+
+.header__menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.header__menu ul li a:hover{
+    text-decoration: underline;
+}
+
+.header h1{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.header h3{
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 100px;
+    font-weight: 300;
+}
+
+.header__button{
+    text-align: center;
+}
+
+.header__button a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border: 2px solid #fb414e;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.header__button a:hover{
+    background: #fb414e;
+}
+
+.feature{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: -80px auto 180px auto;
+}
+
+.feature__element{
+    background: #202b30;
+    flex-basis: 32%;
+    color: white;
+    padding: 70px 60px;
+    box-sizing: border-box;
+}
+
+.feature__element img{
+    margin-bottom: 50px;
+}
+
+.feature__element h3{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.feature__element h3::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    background: #ffffff;
+    display: block;
+    margin-top: 25px;
+}
+
+.feature__element p{
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.service{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block__title{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px; 
+}
+
+.red{
+    color: #fb414e;
+}
+
+.block__subtitle{
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 120px; 
+}
+
+.service__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.service__element{
+    flex-basis: 26%; /* ширина блока разделить на ширину макета: (640-320)/(1610-310) ~ 24-26% */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service__element img{
+    margin-bottom: 30px;
+}
+
+.service__element h3{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.service__element p{
+    font-weight: 300;
+    line-height: 28px;
+    color: #838383;
+}
+
+.footer{
+    background: #202b30;
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.footer__menu ul{
+    display: flex;
+    list-style: none;
+}
+.footer__menu ul li{
+    margin: 0 20px;
+}
+
+.footer__menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__menu ul li a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 850px){
+
+    .feature__element{
+        flex-basis: 49%;
+        padding: 50px 40px;
+        margin-bottom: 20px;
+    }
+
+    .service__element{
+        flex-basis: 49%;
+    }
+
+}
+@media (max-width: 600px){
+
+    .header__top{
+        flex-direction: column;
+        padding: 60px 0 100px 0;
+    }
+
+    .header__logo{
+        margin-bottom: 30px;
+    }
+
+    .header h1{
+        font-size: 36px;
+    }
+
+    .header h3{
+        font-size: 22px;
+    }
+
+    .block__title{
+        font-size: 36px;
+    }
+
+    .block__subtitle {
+        font-size: 17px;
+    }
+
+    .footer__content{
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .footer__logo{
+        margin-bottom: 30px;
+    }
+
+}
+@media (max-width: 500px){
+
+    .feature__element{
+        flex-basis: 100%;
+    }
+
+    .service__element{
+        flex-basis: 100%;/
+    }
+
+}
